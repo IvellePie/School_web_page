@@ -1,0 +1,24 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Nova Terra Institute</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+            <div class = info_card> <h1 class = "titulo" >Login Nova Terra Institute </h1>
+             <form class = "input-group" action="/loginProfesores" method="POST" >
+             <div class="input-group iniciarsesion flex-nowrap">
+               <span class="input-group-text arroba" id="addon-wrapping">@</span>
+               <input type="text" class="iniciarsesion_input" placeholder="Username" name = "usrnmT" aria-label="Username" aria-describedby="addon-wrapping" required>
+             </div>
+             <div class="input-group iniciarsesion flex-nowrap">
+               <span class="input-group-text arroba" id="addon-wrapping">@</span>
+             <input type="password" class="iniciarsesion_input" placeholder="Password" name = "psswrdT" aria-label="Password" aria-describedby="addon-wrapping" required>
+             </div>
+             <button class= "enter" type="submit">Entrar</button>
+             </form>
+              <button class = "enter "type="button" class="btn btn-primary" onclick="window.location.href='/loginEstudiantes'">
+               Login estudiantes
+            </button>
+            </div>
+    </body>
+</html>

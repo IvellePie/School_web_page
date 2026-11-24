@@ -1,0 +1,39 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Nova Terra Institute</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class = "info_card"> <h1 class = "titulo" >Edicion de notas </h1>
+        <p class = "textosx">Docente {{teacherInf[1]}} {{teacherInf[2]}}</p>
+            <form action="" method="POST">
+             <table class = "tablas">
+              <thead class = 'tablas_head'>
+                <tr>
+                 <th scope="col">Estudiantes</th>
+                 <th scope="col">Inglés</th>
+                 <th scope="col">Matemáticas</th>
+                 <th scope="col">Español</th>
+                 <th scope="col">Sociales</th>
+                 <th scope="col">Ciencias</th>
+                </tr>
+               </thead>
+              <tbody class = 'tablas_body'>
+                {% for notas in estudiantes_P %}
+                <tr class = 'tr'>
+                 <td scope="row">{{notas[1][2]}} {{notas[1][3]}}</td>
+                 <td><input class = 'edi_notas' type="number" step="0.1" name="nota_ingles_{{ notas[0] }}"  value= "{{ notas[1][0]['Ingles'] }}" ></td>
+                 <td><input class = 'edi_notas' type="number" step="0.1" name="nota_matematicas_{{ notas[0] }}"  value="{{ notas[1][0]['Matematicas'] }}"></td>
+                 <td><input class = 'edi_notas' type="number" step="0.1" name="nota_español_{{ notas[0] }}"  value="{{ notas[1][0]['Español'] }}"></td>
+                 <td><input class = 'edi_notas' type="number" step="0.1" name="nota_sociales_{{ notas[0] }}"  value="{{ notas[1][0]['Sociales'] }}"></td>
+                 <td><input class = 'edi_notas' type="number" step="0.1" name="nota_ciencias_{{ notas[0] }}"  value="{{ notas[1][0]['Ciencias'] }}" ></td>
+                </tr>
+                {% endfor %}
+             </tbody>
+        </table>
+    <button type="submit" class="enter">Guardar Cambios</button>
+</form>
+    <button class = "enter "type="button" class="btn btn-primary" onclick="window.location.href='/analisisDatos'"> Ver analisis</button>
+  </div>
+  </body>

@@ -1,0 +1,21 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Nova Terra Institute</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+     <div class = "info_card"><h1 class = "titulo" >Nova Terra Institute </h1>
+        <h3> Inicio </h3>
+         <p class = "textosx">Estudiante {{userInf[2]}} {{userInf[3]}} del grado {{userInf[4]}} </p>
+         <div class="d-flex gap-2 justify-content-center">
+            <button class = "enter" type="button" class="btn btn-primary" onclick="window.location.href='/InformacionAcademica/{funciones.userInf[2]}{funciones.userInf[3]}'">
+            Información académica
+            </button>
+            <button class = "enter "type="button" class="btn btn-primary" onclick="window.location.href='/HorarioEscolar/{funciones.userInf[2]}{funciones.userInf[3]}'">
+            Horario escolar
+            </button>
+         </div>
+        </div>
+    </body>
+</html>

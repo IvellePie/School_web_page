@@ -1,0 +1,44 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Nova Terra Institute</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div ><h1 class = titulo>Visualización de notas</h1>
+             <p class = "textosx">Estudiante {{userInf[2]}} {{userInf[3]}} del grado {{userInf[4]}} </p>
+             <p class = "textosx">Promedio: {{promedio}}</p>
+             <p class = "textosx">Puesto: {{puesto}}</p>
+             <table class="tablas">
+              <thead class = 'tablas_head'>
+               <tr>
+                 <th scope="col">Materias</th>
+                 <th scope="col">Nota</th>
+               </tr>
+              </thead>
+             <tbody class = 'tablas_body'>
+                <tr class = 'tr'>
+                 <th scope="row">Inglés</th>
+                 <td class = 'td'>{{code['Ingles']}}</td>
+                </tr>
+                <tr class = 'tr'>
+                 <th scope="row">Matemáticas</th>
+                 <td class = 'td'>{{code['Matematicas']}}</td>
+                </tr>
+                <tr class = 'tr'>
+                 <th scope="row">Español</th>
+                 <td class = 'td'>{{code['Español']}}</td>
+                </tr>
+                <tr class = 'tr'>
+                 <th scope="row">Sociales</th>
+                 <td class = 'td'>{{code['Sociales']}}</td>
+                </tr>
+                <tr class = 'tr'>
+                 <th scope="row">Ciencias</th>
+                 <td class = 'td'>{{code['Ciencias']}}</td>
+                </tr>
+             </tbody>
+             </table>
+            </div>
+    </body>
+</html>

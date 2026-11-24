@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+.iniciarsesion {width: 250px;
+color: #5EC962;
+margin: 10px
+}
+
+.iniciarsesion_input::placeholder {
+    color: #64d868;
+    opacity: 0.8;
+    font-family: 'Michroma', serif;
+}
+.iniciarsesion_input{border: 2px solid #4e649d;
+background-color: #3B528B;
+color: #5EC962;
+justify-content: center;
+margin: auto
+}
+
+.enter {
+    border-color: #e2ce20;
+    box-shadow: 0 0 10px rgba(253, 231, 37, 0.5);
+padding: 5;
+background-color: #FDE725;
+color: #440154;
+justify-content: center;
+font-family: 'Michroma', serif}
+
+body {background: linear-gradient(45deg, #1a0121 15%, #3B528B 85%) ;
+    margin: 0;
+    color: #21918C;
+padding: 20;
+justify-content: center;
+align-items: center;
+background-attachment: fixed;
+display: flex;
+font-family: 'Michroma', serif;}
+
+.pad {padding: 10}
+
+.arroba{border: 2px solid #4e649d; padding: 0px 5px;}
+
+.info_card{background: rgba(255, 255, 255, 0.05);
+backdrop-filter: blur(10px);
+padding: 40px;
+border-radius: 20px;
+border: 1px solid rgba(33, 145, 140, 0.3);
+text-align: left;
+box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5); }
+
+.textosx {color:#5EC962}
+.titulo {font-family: 'Cinzel', serif;
+font-weight: bold;}
+
+.tablas {background: rgba(255, 255, 255, 0.05);
+backdrop-filter: blur(10px);
+padding: 40px;
+border: 1px solid rgba(33, 145, 140, 0.3);
+box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+border-collapse: collapse;
+padding: 10px;
+font-family: 'Montserrat', sans-serif;
+border-radius: 15px;
+overflow: hidden;}
+
+.tablas_head {background-color: #440154;
+color: #FDE725;
+font-family: 'Cinzel', sans-serif;
+text-transform: uppercase;
+padding: 15px;
+font-size: 14px;
+border-bottom: 2px solid #176662;}
+
+.td{
+    padding: 12px 15px;
+    color: rgba(253, 231, 37, 0.7);
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tr:nth-child(even) {
+    background-color: rgba(59, 82, 139, 0.2); 
+}
+
+.tr_h:nth-child(3n) {
+    background-color: rgba(59, 82, 139, 0.2); 
+}
+
+
+tr:hover {
+    background-color: rgba(94, 201, 98, 0.2);
+    cursor: pointer;
+}
+
+.edi_notas {
+    background: transparent;
+    color: rgba(253, 231, 37, 0.7);
+    border: none;
+    text-align: center
+}
+
+.edi_notas::-webkit-outer-spin-button,
+.edi_notas::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.edi_notas {
+    -moz-appearance: textfield;
+}

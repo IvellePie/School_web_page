@@ -1,0 +1,58 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Nova Terra Institute</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div>
+         <h2>Horario grado {{userInf[4]}}</h2>
+     <table class="tablas">
+      <thead  class = 'tablas_head'>
+       <tr>
+         <th scope="col">#</th>
+         <th scope="col">Lunes</th>
+         <th scope="col">Martes</th>
+         <th scope="col">Miercoles</th>
+         <th scope="col">Jueves</th>
+         <th scope="col">Viernes</th>
+       </tr>
+      </thead>
+     <tbody>
+        <tr class = 'tr_h'>
+         <th scope="row">Hora 1</th>
+         {{horario_1 | safe}}
+        </tr>
+        <tr class = 'tr_h'>
+         <th scope="row">Hora 2</th>
+         {{horario_2 | safe}}
+        </tr>
+        <tr class = 'tr_h'>
+         <th scope="row">Hora 3</th>
+         {{horario_3 | safe}}
+        </tr>
+        <tr class = 'tr_h'>
+         <th scope="row">Hora 4</th>
+         {{horario_4 | safe}}
+        </tr>
+        <tr class = 'tr_h'>
+         <th scope="row">Hora 5</th>
+         {{horario_5 | safe}}
+        </tr>
+        <tr class = 'tr_h'>
+         <th scope="row">Hora 6</th>
+         {{horario_6 | safe}}
+        </tr>
+        <tr class = 'tr_h'>
+         <th scope="row">Hora 7 </th>
+         {{horario_7 | safe}}
+        </tr>
+        <tr class = 'tr_h'>
+         <th scope="row">Hora 8 </th>
+         {{horario_8 | safe}}
+        </tr>
+     </tbody>
+     </table>
+    </div>
+    </body>
+</html>
